@@ -236,10 +236,10 @@ function HomeService() {
           </div>
 
           {/* Technology + Peace of Mind */}
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Card 1 */}
+          {/* <div className="grid md:grid-cols-2 gap-12">
+       
             <div className="relative overflow-hidden rounded-2xl p-8   bg-gradient-to-br from-[#DDE5C7] via-[#B7C3A1] to-[#8E9D74]    border border-white/40 shadow-md hover:shadow-2xl    transition-all duration-300 group">
-              {/* soft hover glow */}
+            
               <div className="absolute inset-0 bg-white/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
 
               <h4 className="relative z-10 text-2xl font-semibold text-[#1f2933] mb-3">
@@ -253,9 +253,9 @@ function HomeService() {
               </p>
             </div>
 
-            {/* Card 2 */}
+            
             <div className="relative overflow-hidden rounded-2xl p-8     bg-gradient-to-br from-[#DDE5C7] via-[#B7C3A1] to-[#8E9D74]    border border-white/40 shadow-md hover:shadow-2xl     transition-all duration-300 group">
-              {/* soft hover glow */}
+           
               <div className="absolute inset-0 bg-white/30 opacity-0 group-hover:opacity-100 transition duration-300"></div>
 
               <h4 className="relative z-10 text-2xl font-semibold text-[#1f2933] mb-3">
@@ -267,6 +267,65 @@ function HomeService() {
                 Banebookkeeper, your books stay updated and your tax
                 responsibilities remain under control.
               </p>
+            </div>
+          </div> */}
+
+          <div className="grid md:grid-cols-2 gap-12"
+          style={{color:"white"}}>
+            {/* Card 1 */}
+            <div className="relative overflow-hidden rounded-3xl p-10 border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                  backgroundImage:
+                    "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d')",
+                }}
+              />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-[#E7EED8]/85 to-[#C7D3AF]/80 group-hover:from-white/80 transition-all duration-300" />
+
+              {/* Content */}
+              <div className="relative z-10">
+                <h4 className="text-2xl font-semibold text-[#1f2933] mb-4">
+                  Technology-Driven, People-Focused
+                </h4>
+
+                <p className="text-[#374151] leading-relaxed text-lg">
+                  We use modern accounting tools to streamline workflows and
+                  reduce errors, combined with experienced professionals who
+                  review every detail carefully.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="relative overflow-hidden rounded-3xl p-10 border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+              {/* Background Image */}
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                  backgroundImage:
+                    "url('https://images.unsplash.com/photo-1556761175-4b46a572b786')",
+                }}
+              />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-[#E7EED8]/85 to-[#C7D3AF]/80 group-hover:from-white/80 transition-all duration-300" />
+
+              {/* Content */}
+              <div className="relative z-10">
+                <h4 className="text-2xl font-semibold text-[#1f2933] mb-4">
+                  Peace of Mind, All Year Long
+                </h4>
+
+                <p className="text-[#374151] leading-relaxed text-lg">
+                  No last-minute rushes or financial uncertainty. With
+                  Banebookkeeper, your books stay updated and your tax
+                  responsibilities remain under control.
+                </p>
+              </div>
             </div>
           </div>
         </div>

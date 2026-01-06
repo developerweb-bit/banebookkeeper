@@ -15,31 +15,50 @@ import Faq from "../components/Faq/Faq";
 export default function page() {
   return (
     <section className="bg-white py-14">
-      <div className="max-w-6 bg-gradient-to-b from-[#9CAB84] to-[#89986D]xl mx-auto px-6 text-gray-700 space-y-28">
+      <div className="max-w-6xl mb-15  mx-auto px-6 text-gray-700 space-y-28">
         {/* About Intro */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="max-w-4xl"
-        >
-          <h2 className="text-4xl font-semibold text-[#1f2933] mb-6">
-            About Us
-          </h2>
-          <p className="leading-relaxed text-lg">
-            At Banebookkeeper, we believe that clear financial records and
-            reliable tax support are essential for business confidence and
-            long-term growth. Our focus is on delivering accurate, organized,
-            and stress-free bookkeeping and tax services tailored to small and
-            growing businesses.
-          </p>
-          <p className="leading-relaxed text-lg mt-4">
-            We work closely with our clients to simplify financial processes,
-            maintain compliance, and provide clarity—without unnecessary
-            complexity.
-          </p>
-        </motion.div>
+        <section className="relative py-18 rounded-2xl overflow-hidden">
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1554224155-6726b3ff858f')",
+            }}
+          />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/90 to-white/70" />
+
+          {/* Content */}
+          <div className="relative max-w-7xl mx-auto px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="max-w-4xl"
+            >
+              <h2 className="text-4xl font-semibold text-[#1f2933] mb-6">
+                About Us
+              </h2>
+
+              <p className="leading-relaxed text-lg text-gray-700">
+                At Banebookkeeper, we believe that clear financial records and
+                reliable tax support are essential for business confidence and
+                long-term growth. Our focus is on delivering accurate,
+                organized, and stress-free bookkeeping and tax services tailored
+                to small and growing businesses.
+              </p>
+
+              <p className="leading-relaxed text-lg text-gray-700 mt-4">
+                We work closely with our clients to simplify financial
+                processes, maintain compliance, and provide clarity—without
+                unnecessary complexity.
+              </p>
+            </motion.div>
+          </div>
+        </section>
 
         {/* Founder Section */}
         <motion.div
