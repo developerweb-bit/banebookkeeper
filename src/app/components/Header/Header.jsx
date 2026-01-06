@@ -88,12 +88,12 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-[#0f1224] flex flex-col text-start items-center  text-center space-y-4 py-6">
+          <div className="md:hidden text-white flex flex-col text-start items-center  text-center space-y-4 py-6">
             {navLinks.map((navLink, index) => (
               <button
                 key={index}
                 onClick={() => handleNavigation(navLink.path)}
-                className="text-gray-300 t hover:text-indigo-400 text-2xl"
+                className="text-white t hover:text-indigo-400 text-2xl"
               >
                 {navLink.name}
               </button>
