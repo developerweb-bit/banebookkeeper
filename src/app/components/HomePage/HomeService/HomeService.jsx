@@ -81,11 +81,11 @@ function HomeService() {
                 {/* <div className="absolute inset-0 bg-gradient-to-t from-[#9CAB84]/70 to-transparent" /> */}
               </div>
 
-              <div className="p-8 text-left">
-                <h3 className="text-2xl font-semibold text-[#1f2933] mb-3 ">
+              <div className="p-8 text-left text-white  bg-gradient-to-b from-[#9CAB84] to-[#89986D]">
+                <h3 className="text-2xl font-semibold t mb-3 ">
                   Bookkeeping
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className=" leading-relaxed">
                   Maintain accurate records, track expenses, and gain clear
                   financial visibility with reliable bookkeeping support.
                 </p>
@@ -106,11 +106,11 @@ function HomeService() {
                 {/* <div className="absolute inset-0 bg-gradient-to-t from-[#89986D]/70 to-transparent" /> */}
               </div>
 
-              <div className="p-8 text-left">
-                <h3 className="text-2xl font-semibold text-[#1f2933]  mb-3">
+              <div className="p-8 text-left  bg-gradient-to-b from-[#9CAB84] to-[#89986D] text-white">
+                <h3 className="text-2xl font-semibold text-[#1f233]  mb-3">
                   Tax
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gra-600 leading-relaxed">
                   Professional tax preparation and guidance to ensure compliance
                   and peace of mind throughout the year.
                 </p>
