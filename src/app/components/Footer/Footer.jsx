@@ -8,27 +8,31 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-14 pb-5">
         {/* Top Section */}
         {/* Disclaimer */}
-        <div className="text-center py-10  rounded-2xl mb-10 bg-[#f4f4f4] px-6 text-black ">
-          <div className="logo-link flex items-center gap-1 w-auto h-17 md:h-17">
-            <div className="logo-link pb-3 flex items-center m-auto gap-1 w-auto h-17 md:h-17">
-              <Image
-                src={tax}
-                className="h-full w-full object-cover rounded"
-                alt="logo bookkeeper"
-              ></Image>
-            </div>
+        <div className="text-start py-10  flex flex-col sm:flex-row gap-10  rounded-2xl mb-10 bg-[#f4f4f4] px-6 text-black ">
+          <div className="logo-link pb-3 flex items-center m-auto gap-1 w-[300px]  h-[100px]">
+            <Link href="/">
+            
+            <Image
+              src={tax}
+              className="h-full w-full object-cover rounded-xl"
+              alt="logo bookkeeper"
+            ></Image>
+            </Link>
           </div>
-          <p className="text-base leading-relaxed">
-            Banebookkeeper is not a CPA firm and does not provide attest
-            services, including audits, reviews, or compilations. These services
-            are regulated by the Texas State Board of Public Accountancy and are
-            not offered by Banebookkeeper.
-          </p>
 
-          <p className="text-base leading-relaxed mt-4">
-            Our services are limited to bookkeeping and tax support, delivered
-            with accuracy, confidentiality, and compliance-focused processes.
-          </p>
+          <div>
+            <p className="text-base leading-relaxed">
+              Banebookkeeper is not a CPA firm and does not provide attest
+              services, including audits, reviews, or compilations. These
+              services are regulated by the Texas State Board of Public
+              Accountancy and are not offered by Banebookkeeper.
+            </p>
+
+            <p className="text-base leading-relaxed mt-4">
+              Our services are limited to bookkeeping and tax support, delivered
+              with accuracy, confidentiality, and compliance-focused processes.
+            </p>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Navigation */}
