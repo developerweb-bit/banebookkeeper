@@ -22,6 +22,7 @@ import {
   //   FaChartLine,
 } from "react-icons/fa";
 import Link from "next/link";
+import Faq from "../components/Faq/Faq";
 
 function page() {
   const approach = [
@@ -50,7 +51,7 @@ function page() {
   return (
     <div>
       <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="max-w-6xl mx-auto px-6 mb-10 text-center">
           <h2 className="text-3xl font-semibold text-[#1f2933] mb-4">
             Our Core Services
           </h2>
@@ -62,28 +63,27 @@ function page() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Bookkeeping */}
             <Link href="/bookkeeping">
+              <div className="group border rounded-2xl overflow-hidden hover:shadow-xl transition ">
+                <div className="relative h-86">
+                  <Image
+                    src={book}
+                    alt="Bookkeeping Services"
+                    fill
+                    className="object-cover group-hover:scale-105 transition duration-500"
+                  />
+                  {/* <div className="absolute inset-0 bg-gradient-to-t from-[#9CAB84]/70 to-transparent" /> */}
+                </div>
 
-            <div className="group border rounded-2xl overflow-hidden hover:shadow-xl transition">
-              <div className="relative h-86">
-                <Image
-                  src={book}
-                  alt="Bookkeeping Services"
-                  fill
-                  className="object-cover group-hover:scale-105 transition duration-500"
-                />
-                {/* <div className="absolute inset-0 bg-gradient-to-t from-[#9CAB84]/70 to-transparent" /> */}
+                <div className="p-8 text-left  bg-gradient-to-b from-[#9CAB84] to-[#89986D] text-white">
+                  <h3 className="text-2xl font-semibold tex mb-3 ">
+                    Bookkeeping
+                  </h3>
+                  <p className="te leading-relaxed">
+                    Maintain accurate records, track expenses, and gain clear
+                    financial visibility with reliable bookkeeping support.
+                  </p>
+                </div>
               </div>
-
-              <div className="p-8 text-left">
-                <h3 className="text-2xl font-semibold text-[#1f2933] mb-3 ">
-                  Bookkeeping
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Maintain accurate records, track expenses, and gain clear
-                  financial visibility with reliable bookkeeping support.
-                </p>
-              </div>
-            </div>
             </Link>
 
             {/* Tax */}
@@ -99,11 +99,11 @@ function page() {
                   {/* <div className="absolute inset-0 bg-gradient-to-t from-[#89986D]/70 to-transparent" /> */}
                 </div>
 
-                <div className="p-8 text-left">
-                  <h3 className="text-2xl font-semibold text-[#1f2933]  mb-3">
+                <div className="p-8 text-left  bg-gradient-to-b from-[#9CAB84] to-[#89986D] text-white">
+                  <h3 className="text-2xl font-semibold   mb-3">
                     Tax
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className=" leading-relaxed">
                     Professional tax preparation and guidance to ensure
                     compliance and peace of mind throughout the year.
                   </p>
@@ -386,6 +386,7 @@ function page() {
           </div>
         </section>
       </section>
+      <Faq />
     </div>
   );
 }

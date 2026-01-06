@@ -7,6 +7,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaChartLine, FaCogs, FaLock, FaClock } from "react-icons/fa";
 import Link from "next/link";
+import Faq from "../../Faq/Faq";
 
 function HomeService() {
   const sections = [
@@ -270,6 +271,9 @@ function HomeService() {
           </div>
         </div>
       </section>
+
+      {/*  */}
+      <Faq />
     </section>
   );
 }

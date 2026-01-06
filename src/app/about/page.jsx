@@ -10,11 +10,12 @@ import {
   FaBullseye,
   FaHandshake,
 } from "react-icons/fa";
+import Faq from "../components/Faq/Faq";
 
 export default function page() {
   return (
     <section className="bg-white py-14">
-      <div className="max-w-7xl mx-auto px-6 text-gray-700 space-y-28">
+      <div className="max-w-6 bg-gradient-to-b from-[#9CAB84] to-[#89986D]xl mx-auto px-6 text-gray-700 space-y-28">
         {/* About Intro */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -157,6 +158,7 @@ export default function page() {
           </div>
         </motion.div>
       </div>
+      <Faq />
     </section>
   );
 }

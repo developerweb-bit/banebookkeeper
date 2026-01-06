@@ -27,6 +27,7 @@ import {
   FaHandsHelping,
 } from "react-icons/fa";
 import Link from "next/link";
+import Faq from "../components/Faq/Faq";
 
 export default function page() {
   const services = [
@@ -304,6 +305,9 @@ export default function page() {
           and tax processes are always under control.
         </p>
       </section>
+
+      <Faq />
+
 
       {/* CTA */}
       <section className="text-center bg-gradient-to-r from-[#9CAB84]/20 to-[#89986D]/20 rounded-[40px] py-20 px-6">
