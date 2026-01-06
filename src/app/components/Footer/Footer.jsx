@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import tax from "../../../.../../../public/logo.png";
 
 export default function Footer() {
   return (
@@ -6,8 +8,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-14 pb-5">
         {/* Top Section */}
         {/* Disclaimer */}
-        <div className="text-center py-15 rounded-2xl mb-10 bg-[#f4f4f4] px-6 text-black ">
-          <h3 className="text-4xl mb-2 font-semibold">Banebookkeeper</h3>
+        <div className="text-center py-10  rounded-2xl mb-10 bg-[#f4f4f4] px-6 text-black ">
+          <div className="logo-link flex items-center gap-1 w-auto h-17 md:h-17">
+            <div className="logo-link pb-3 flex items-center m-auto gap-1 w-auto h-17 md:h-17">
+              <Image
+                src={tax}
+                className="h-full w-full object-cover rounded"
+                alt="logo bookkeeper"
+              ></Image>
+            </div>
+          </div>
           <p className="text-base leading-relaxed">
             Banebookkeeper is not a CPA firm and does not provide attest
             services, including audits, reviews, or compilations. These services

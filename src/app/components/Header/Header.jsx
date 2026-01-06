@@ -2,9 +2,11 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./Header.scss";
+import tax from "../../../.../../../public/logo.png";
 
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,15 +52,15 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-gradient-to-b from-[#9CAB84] to-[#89986D] py-3 text-white shadow-md z-50 px-6">
-        <div className="max-w-7xl mx-auto flex justify-between items-center py-1 px-2 md:px-0">
+      <header className="bg-gradient-to-b from-[#9CAB84] to-[#89986D] pt-2 text-white shadow-md z-50 px-6">
+        <div className="max-w-7xl mx-auto flex justify-between items-center  px-2 md:px-0">
           {/* Logo */}
           <div
             className="text-2xl font-bold cursor-pointer"
             onClick={() => handleNavigation("/")}
           >
-            <div className="logo-link flex items-center gap-1">
-              <h2>BaneBook</h2>
+            <div className="logo-link flex items-center gap-1 w-auto h-10 md:h-17">
+              <Image src={tax} className="h-full w-full object-cover rounded" alt="logo bookkeeper"></Image>
             </div>
           </div>
 
