@@ -5,7 +5,7 @@ import HomeService from "./components/HomePage/HomeService/HomeService";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Hero />
       <HomeService />
     </div>

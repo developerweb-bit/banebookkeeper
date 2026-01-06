@@ -8,7 +8,7 @@ import imgss from "../../../../../public/img.jpg"
 export default function Hero() {
   return (
     <>
-      <section className="relative min-h-screen flex items-center bg-white overflow-hidden">
+      <section className="relative pt-10 min-h-screen flex items-center bg-white overflow-hidden">
         {/* Background Accent */}
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-gradient-to-br from-[#9CAB84]/30 to-[#89986D]/30 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-gradient-to-br from-[#89986D]/20 to-[#9CAB84]/20 rounded-full blur-3xl" />
@@ -83,7 +83,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative w-120 "
+            className="relative w-full md:w-120 "
           >
             <div className="rounded-2xl overflow-hidden shadow-xl border">
               <Image
@@ -91,7 +91,7 @@ export default function Hero() {
                 alt="Bookkeeping illustration"
                 width="100%"
               
-                className="object-cover h-[400px]"
+                className="object-cover h-[300px] md:h-[400px]"
               />
             </div>
           </motion.div>
