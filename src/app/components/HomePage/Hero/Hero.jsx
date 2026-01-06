@@ -8,12 +8,12 @@ import imgss from "../../../../../public/img.jpg"
 export default function Hero() {
   return (
     <>
-      <section className="relative pt-10 pb-10 min-h-screen flex items-center bg-white overflow-hidden">
+      <section className="relative  pt-10 pb-10 min-h-screen flex items-center bg-white overflow-hidden">
         {/* Background Accent */}
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-gradient-to-br from-[#9CAB84]/30 to-[#89986D]/30 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-gradient-to-br from-[#89986D]/20 to-[#9CAB84]/20 rounded-full blur-3xl" />
 
-        <div className="relative max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-18 items-center">
+        <div className="relative max-w-6xl mx-auto  grid grid-cols-1 md:grid-cols-2 gap-18  items-center">
           {/* LEFT CONTENT */}
           <div className="space-y-8">
             {/* Heading */}

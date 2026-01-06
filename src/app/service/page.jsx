@@ -50,16 +50,32 @@ function page() {
 
   return (
     <div>
-      <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6 mb-10 text-center">
-          <h2 className="text-3xl font-semibold text-[#1f2933] mb-4">
-            Our Core Services
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-            We specialize in two essential financial services designed to keep
-            your business organized and compliant.
-          </p>
+      <section className="bg-white pt-0 py-20">
+        <section className="relative mb-15 py-24 text-center overflow-hidden">
+          {/* Background image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a')",
+            }}
+          />
 
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-white/40" />
+
+          {/* Content */}
+          <div className="relative z-10 max-w-6xl mx-auto px-6 backdrop-blur w-[fit-content] rounded-xl py-4">
+            <h2 className="text-4xl font-semibold text-black mb-4">
+              Our Core Services
+            </h2>
+            <p className="text-black max-w-2xl mx-auto text-lg">
+              We specialize in two essential financial services designed to keep
+              your business organized and compliant.
+            </p>
+          </div>
+        </section>
+        <div className="max-w-6xl mx-auto px-6 mb-10 text-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Bookkeeping */}
             <Link href="/bookkeeping">
@@ -100,9 +116,7 @@ function page() {
                 </div>
 
                 <div className="p-8 text-left  bg-gradient-to-b from-[#9CAB84] to-[#89986D] text-white">
-                  <h3 className="text-2xl font-semibold   mb-3">
-                    Tax
-                  </h3>
+                  <h3 className="text-2xl font-semibold   mb-3">Tax</h3>
                   <p className=" leading-relaxed">
                     Professional tax preparation and guidance to ensure
                     compliance and peace of mind throughout the year.
