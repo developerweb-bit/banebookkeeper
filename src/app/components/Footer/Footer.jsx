@@ -63,13 +63,13 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-5">Services</h4>
             <ul className="space-y-3 text-base">
               <li>
-                <Link href="/services" className="hover:underline">
+                <Link href="/tax" className="hover:underline">
                   Tax
                 </Link>
               </li>
               <li>
-                <Link href="/web-marketing" className="hover:underline">
-                  Bookkeeping
+                <Link href="/bookkeeping" className="hover:underline">
+                  Bookkeeper
                 </Link>
               </li>
             </ul>
