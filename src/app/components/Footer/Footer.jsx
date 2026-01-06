@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/30  pt-6 text-center text-sm">
+        <div className="border-t border-white/30  pt-6 mt-6 text-center text-sm">
           © {new Date().getFullYear()} Banebookkeeper. All rights reserved.
         </div>
       </div>
