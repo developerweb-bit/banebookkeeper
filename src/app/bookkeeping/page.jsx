@@ -297,7 +297,7 @@ export default function page() {
               </div>
             </div>
           ))}
-        </div>
+        </div> 
 
         <p className="mt-12 max-w-4xl text-lg leading-relaxed">
           We work as a reliable extension of your business, ensuring your books
