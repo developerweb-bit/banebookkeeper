@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* bg tailwind  */
+/* bg-gradient-to-b from-[#9CAB84] to-[#89986D] */
+
+.bg {
+  background: linear-gradient(to right, #9cab84, #89986d);
+}
+
+button , Link {
+  cursor: pointer;
+}

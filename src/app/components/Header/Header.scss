@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #ffcc06;
+  --secondary-color: #1d34a4;
+  --header-height: 73px;
+}
+
+header {
+  &.bg-\[\#0a0c1a\] {
+    background-color: var(--secondary-color) !important;
+  }
+
+  // Logo hover glow effect
+  .logo-link {
+    display: inline-block;
+    transition: all 10s ease;
+
+    @media (max-width: 580px) {
+      .imglogo {
+        height: 30px;
+      }
+    }
+
+    &:hover img {
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+    }
+  }
+
+  .max-w-7xl {
+    .text-gray-300 {
+      &:hover {
+        color: var(--primary-color) !important;
+      }
+    }
+
+    .hover\:text-indigo-400:hover {
+      color: var(--primary-color) !important;
+    }
+  }
+
+  // Mobile menu
+  .bg-\[\#0f1224\] {
+    // background-color: rgba(29, 52, 164, 0.95) !important;
+
+    .hover\:text-indigo-400:hover {
+      color: var(--primary-color) !important;
+    }
+  }
+
+  // If this file doesn't exist yet, create it
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+header::before {
+  display: none;
+}
+
+.logo-link {
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.ticker-container {
+  // position: sticky;
+  // top: 0;
+  top: var(--header-height); // Use CSS variable for header height
+  z-index: 40;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .tradingview-widget-container {
+    width: 100%;
+    overflow: visible; // Allow content to be fully visible
+
+    .tradingview-widget-container__widget {
+      min-height: 46px;
+      height: auto !important; // Override any fixed height
+      max-height: none !important; // Remove any max-height constraints
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    top: var(--header-height); // Use dynamic header height
+
+    .tradingview-widget-container {
+      &__widget {
+        min-height: 46px;
+        height: auto !important; // Auto height for mobile
+        max-height: none !important;
+        font-size: 0.95em; // Slightly larger font for better readability
+        overflow: visible !important; // Ensure content is visible
+        // padding: 8px 0; // Add padding for better spacing
+      }
+    }
+  }
+
+  // Additional styles for very small screens
+  @media (max-width: 480px) {
+    .tradingview-widget-container__widget {
+      min-height: auto !important; // Allow it to grow as needed
+      height: auto !important; // Auto height for mobile
+      // padding: 10px 0; // More padding on smaller screens
+    }
+  }
+
+  // Dropdown menu styling
+  .relative {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    animation: fadeIn 0.2s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+// Add a spacer to ensure no content gets hidden under the sticky elements
+// body {
+//   padding-top: 0; // Remove any existing padding that might cause issues
+// }
+
+// Fix for TradingView iframe content
+iframe[src*="tradingview.com"] {
+  height: auto !important;
+  min-height: 46px;
+}
