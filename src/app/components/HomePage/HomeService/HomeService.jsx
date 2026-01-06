@@ -6,6 +6,7 @@ import tax from "../../../../../public/tax.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaChartLine, FaCogs, FaLock, FaClock } from "react-icons/fa";
+import Link from "next/link";
 
 function HomeService() {
   const sections = [
@@ -68,48 +69,54 @@ function HomeService() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Bookkeeping */}
-          <div className="group border rounded-2xl overflow-hidden hover:shadow-xl transition">
-            <div className="relative h-86">
-              <Image
-                src={book}
-                alt="Bookkeeping Services"
-                fill
-                className="object-cover group-hover:scale-105 transition duration-500"
-              />
-              {/* <div className="absolute inset-0 bg-gradient-to-t from-[#9CAB84]/70 to-transparent" /> */}
-            </div>
+          <Link href="/bookkeeping">
+            <div className="group border rounded-2xl overflow-hidden hover:shadow-xl transition">
+              <div className="relative h-86">
+                <Image
+                  src={book}
+                  alt="Bookkeeping Services"
+                  fill
+                  className="object-cover group-hover:scale-105 transition duration-500"
+                />
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-[#9CAB84]/70 to-transparent" /> */}
+              </div>
 
-            <div className="p-8 text-left">
-              <h3 className="text-2xl font-semibold text-[#1f2933] mb-3 ">
-                Bookkeeping
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Maintain accurate records, track expenses, and gain clear
-                financial visibility with reliable bookkeeping support.
-              </p>
+              <div className="p-8 text-left">
+                <h3 className="text-2xl font-semibold text-[#1f2933] mb-3 ">
+                  Bookkeeping
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Maintain accurate records, track expenses, and gain clear
+                  financial visibility with reliable bookkeeping support.
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
 
           {/* Tax */}
-          <div className="group border rounded-2xl overflow-hidden hover:shadow-xl transition">
-            <div className="relative h-86">
-              <Image
-                src={tax}
-                alt="Tax Services"
-                fill
-                className="object-cover group-hover:scale-105 transition duration-500"
-              />
-              {/* <div className="absolute inset-0 bg-gradient-to-t from-[#89986D]/70 to-transparent" /> */}
-            </div>
+          <Link href="/tax">
+            <div className="group border rounded-2xl overflow-hidden hover:shadow-xl transition">
+              <div className="relative h-86">
+                <Image
+                  src={tax}
+                  alt="Tax Services"
+                  fill
+                  className="object-cover group-hover:scale-105 transition duration-500"
+                />
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-[#89986D]/70 to-transparent" /> */}
+              </div>
 
-            <div className="p-8 text-left">
-              <h3 className="text-2xl font-semibold text-[#1f2933]  mb-3">Tax</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Professional tax preparation and guidance to ensure compliance
-                and peace of mind throughout the year.
-              </p>
+              <div className="p-8 text-left">
+                <h3 className="text-2xl font-semibold text-[#1f2933]  mb-3">
+                  Tax
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Professional tax preparation and guidance to ensure compliance
+                  and peace of mind throughout the year.
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 
