@@ -80,7 +80,7 @@ function HomeService() {
             </div>
 
             <div className="p-8 text-left">
-              <h3 className="text-xl font-semibold text-[#1f2933] mb-3">
+              <h3 className="text-2xl font-semibold text-[#1f2933] mb-3 ">
                 Bookkeeping
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -103,7 +103,7 @@ function HomeService() {
             </div>
 
             <div className="p-8 text-left">
-              <h3 className="text-xl font-semibold text-[#1f2933] mb-3">Tax</h3>
+              <h3 className="text-2xl font-semibold text-[#1f2933]  mb-3">Tax</h3>
               <p className="text-gray-600 leading-relaxed">
                 Professional tax preparation and guidance to ensure compliance
                 and peace of mind throughout the year.
@@ -115,7 +115,7 @@ function HomeService() {
 
       {/*  */}
       <section className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-6 space-y-32 text-gray-800">
+        <div className="max-w-6xl mx-auto px-6 space-y-32 text-gray-800">
           {/* Who We Work With — with Image Split */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">

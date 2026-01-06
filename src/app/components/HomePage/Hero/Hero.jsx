@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-gradient-to-br from-[#9CAB84]/30 to-[#89986D]/30 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-gradient-to-br from-[#89986D]/20 to-[#9CAB84]/20 rounded-full blur-3xl" />
 
-        <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+        <div className="relative max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-18 items-center">
           {/* LEFT CONTENT */}
           <div className="space-y-8">
             {/* Heading */}
@@ -21,7 +21,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-6xl font-bold text-[#1f2933] leading-tight"
+              className="text-4xl md:text-5xl font-bold text-[#1f2933] leading-tight"
             >
               Bookkeeping & Tax Services
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#9CAB84] to-[#89986D]">
@@ -83,15 +83,15 @@ export default function Hero() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative"
+            className="relative w-120 "
           >
             <div className="rounded-2xl overflow-hidden shadow-xl border">
               <Image
                 src={imgss}
                 alt="Bookkeeping illustration"
                 width="100%"
-                height={750}
-                className="object-cover h-[500px]"
+              
+                className="object-cover h-[400px]"
               />
             </div>
           </motion.div>

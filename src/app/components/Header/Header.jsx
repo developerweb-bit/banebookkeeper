@@ -13,7 +13,8 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Education", path: "/education" },
+    { name: "service", path: "/education" },
+    { name: "About Us", path: "/about" },
 
     { name: "Contact", path: "/contact" },
   ];
@@ -49,7 +50,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-gradient-to-b from-[#9CAB84] to-[#89986D] py-3 text-white shadow-md z-50">
+      <header className="bg-gradient-to-b from-[#9CAB84] to-[#89986D] py-3 text-white shadow-md z-50 px-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center py-1 px-2 md:px-0">
           {/* Logo */}
           <div
