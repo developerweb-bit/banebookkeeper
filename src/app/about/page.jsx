@@ -61,28 +61,27 @@ export default function page() {
         </section>
 
         {/* Founder Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="grid md:grid-cols-2 gap-14 items-center"
         >
-          {/* Image */}
+     
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-br from-[#9CAB84]/30 to-[#89986D]/30 rounded-3xl blur-2xl" />
             <div className="relative h-150 rounded-3xl overflow-hidden shadow-xl">
               <img
                 src="https://images.unsplash.com/photo-1580489944761-15a19d654956"
                 alt="Founder"
-                // width={500}
-                // height={500}
+               
                 className="object-cover h-full w-full"
               />
             </div>
           </div>
 
-          {/* Content */}
+          \
           <div>
             <h3 className="text-3xl font-semibold text-[#1f2933] mb-2">
               About the Founder
@@ -106,7 +105,7 @@ export default function page() {
               decisions.
             </p>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Values */}
         <motion.div
