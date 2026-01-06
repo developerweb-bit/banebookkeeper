@@ -10,34 +10,38 @@ export default function page() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
-      formRef.current,
-      "YOUR_PUBLIC_KEY"
-    )
-    .then(() => {
-      alert("Message sent successfully!");
-      formRef.current.reset();
-    })
-    .catch(() => {
-      alert("Failed to send message. Try again.");
-    });
+    // const data = {};
+    // formData.forEach((value, key) => {
+    //   data[key] = value;
+    // });
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        formRef.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(() => {
+        alert("Message sent successfully!");
+        formRef.current.reset();
+      })
+      .catch(() => {
+        alert("Failed to send message. Try again.");
+      });
   };
 
   return (
     <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
-
+      <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h1 className="text-4xl font-semibold text-[#1f2933] mb-4">
             Contact Us
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Let’s Simplify Your Bookkeeping & Tax Needs.  
-            We’re here to help you stay organized, compliant, and confident
-            with your finances.
+            Let’s Simplify Your Bookkeeping & Tax Needs. We’re here to help you
+            stay organized, compliant, and confident with your finances.
           </p>
         </div>
 
@@ -47,18 +51,18 @@ export default function page() {
             {
               icon: <FaUser />,
               title: "Bookkeeping Support",
-              text: "Accurate and reliable bookkeeping tailored to your business."
+              text: "Accurate and reliable bookkeeping tailored to your business.",
             },
             {
               icon: <FaEnvelope />,
               title: "Tax Assistance",
-              text: "Professional tax preparation and year-round support."
+              text: "Professional tax preparation and year-round support.",
             },
             {
               icon: <FaPhoneAlt />,
               title: "Ongoing Support",
-              text: "Clear communication and dependable financial guidance."
-            }
+              text: "Clear communication and dependable financial guidance.",
+            },
           ].map((item, i) => (
             <div
               key={i}
@@ -70,16 +74,13 @@ export default function page() {
               <h3 className="text-lg font-semibold text-[#1f2933] mb-2">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm">
-                {item.text}
-              </p>
+              <p className="text-gray-600 text-sm">{item.text}</p>
             </div>
           ))}
         </div>
 
         {/* Content + Form */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-
           {/* Left Content */}
           <div className="space-y-6 text-gray-700">
             <h3 className="text-2xl font-semibold text-[#1f2933]">
@@ -100,7 +101,7 @@ export default function page() {
                 "Prompt and professional responses",
                 "Clear communication",
                 "Confidential handling of your information",
-                "Reliable support tailored to your needs"
+                "Reliable support tailored to your needs",
               ].map((text, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-[#89986D] rounded-full mt-2"></span>
@@ -170,7 +171,6 @@ export default function page() {
             </div>
           </form>
         </div>
-
       </div>
     </section>
   );

@@ -82,9 +82,7 @@ function HomeService() {
               </div>
 
               <div className="p-8 text-left text-white  bg-gradient-to-b from-[#9CAB84] to-[#89986D]">
-                <h3 className="text-2xl font-semibold t mb-3 ">
-                  Bookkeeping
-                </h3>
+                <h3 className="text-2xl font-semibold t mb-3 ">Bookkeeping</h3>
                 <p className=" leading-relaxed">
                   Maintain accurate records, track expenses, and gain clear
                   financial visibility with reliable bookkeeping support.
