@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "banebookkeper",
-  description: "tax service and bookkeeping service",
+  title: "Banebookkeper",
+  description: "Tax Service And Bookkeeping Service",
 };
 
 export default function RootLayout({ children }) {
